@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+/* RESET */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  display: flex;
+  font-family:'Poiret One'; 
+  color:#555;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* 헤더 */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  width: 15%;
+}
+
+header > #logo {
+  margin-top: 8rem;
+}
+
+header > h1 * {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logo_img2 {
+  display: none;
+}
+
+header > .main_menu_frame {
+  width: 100%;
+  margin-top: 8.5rem;
+}
+
+.main_menu_frame > ul > li > a {
+  display: block;
+  padding: 0.8rem 5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.8;
+  transition: 0.2s;
+}
+
+.main_menu_frame > ul > li > a:hover {
+  padding-left: 7rem;
+  color: gray;
+}
+
+.main_menu_frame > ul > li > a > i {
+  margin-right: 1rem;
+}
+
+.util {
+  width: 90px;
+  margin: auto 0 4.5rem;
+}
+
+.util > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.util > ul > li:first-of-type,
+.util > ul > li:nth-of-type(2) {
+  margin-bottom: 0.6rem;
+}
+
+.util > ul > li:nth-of-type(3) {
+  margin-right: 2rem;
+}
+
+.util > ul > li > a {
+  display: block;
+}
+
+/* 메인 영역 */
+
+main {
+  width: 85%;
+  height: 100%;
+}
+
+/* 탑 네비 */
+
+.top_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  background-color: #212121;
+  transition: 0.5s;
+}
+
+.top_nav > .lang > ul >li.item01 {
+  margin-right: 1rem;
+}
+
+.lang > ul, .login > ul {
+  display: flex;
+}
+
+.lang > ul > li > a {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.lang > ul > li > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* SECTION */
+
+section {
+  height: calc(100% - 35px);
+}
+
+section > ul {
+  height: 100%;
+}
+
+section > ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* item 01 */
+
+section > ul > .item01 {
+  float: left;
+  width: 60%;
+  height: 50%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #f5f5f7;
+  transition: 0.3s;
+}
+
+section > ul > .item01 > .item01_txt {
+  height: 100%;
+  padding-top: 2rem;
+  background: url('../images/item01.jpg') no-repeat center;
+  background-size: auto 100%;
+  transition: 0.3s;
+}
+
+section > ul > .item01 > .item01_txt > h2 {
+  font-size: 5rem;
+}
+
+section > ul > .item01 > .item01_txt > h3 {
+  margin-top: 0.4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+section > ul > .item01 > .item01_txt > div {
+  margin-top: 1rem;
+}
+
+section > ul > .item01 > .item01_txt > div > a {
+  font-size: 1.8rem;
+  color: #2997ff;
+}
+
+section > ul > .item01 > .item01_txt > div > a:first-of-type {
+  margin-right: 1.5rem;
+}
+
+
+/* section > ul > li.item01 > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* item 02 */
+
+section > ul > .item02 > div {
+  background: url('../images/item02.png') no-repeat center;
+}
+
+/* item 03 */
+
+section > ul > .item03 > div::before {
+  background: url('../images/iphone_b.svg') no-repeat center bottom 15%;
+}
+
+/* item 04 */
+
+section > ul > .item04 > div {
+  background: url('../images/item04.png') no-repeat center;
+}
+
+/* item 05 */
+
+section > ul > .item05 > div::before {
+  background: url('../images/ipad_b.svg') no-repeat center bottom 10%;
+}
+
+/* item 06, item10 이미지 공통 */
+
+section > ul > .item06 > div,
+section > ul > .item10 > div {
+  background: url('../images/item06.png') no-repeat center;
+}
+
+/* item 07 */
+
+section > ul > .item07 > div::before {
+  background: url('../images/airpod_b.svg') no-repeat center bottom 10%;
+}
+
+/* item 08 */
+
+section > ul > .item08 > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 6rem 3rem;
+  transition: 0.3s;
+}
+
+section > ul > .item08 > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/store.png') no-repeat center;
+  background-size: 140px 140px;
+  transition: 0.3s;
+  opacity: 0.2;
+}
+
+section > ul > .item08 > div > h3 {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #444;
+}
+
+section > ul > .item08 > div > p {
+  position: relative;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* item 11 */
+
+section > ul > .item11 > div::before {
+  background: url('../images/macbook_b.svg') no-repeat center bottom -25%;
+}
+
+/* item 12 */
+
+section > ul > .item12 > div {
+  background: url('../images/item09.png') no-repeat center;
+}
+
+/* item 13 */
+
+section > ul > .item13 > div::before {
+  background: url('../images/watch_b.svg') no-repeat center bottom 10%;
+} 
+
+
+/* item 09, item 14 공통 */
+
+section > ul > .item09 > div,
+section > ul > .item14 > div {
+  background: url('../images/item11.jpg') no-repeat center;
+}
+
+/* imte 08, item09, item10 공통 */
+
+section > ul > .item08,
+section > ul > .item09,
+section > ul > .item10 {
+  display: none;
+}
+
+/* 영역 공통 */
+
+section > ul > .item02,
+section > ul > .item03, 
+section > ul > .item04,
+section > ul > .item12,
+section > ul > .item14 {
+  float: left;
+  width: 40%;
+  height: 25%;
+}
+
+section > ul > .item05,
+section > ul > .item06,
+section > ul > .item07,
+section > ul > .item09,
+section > ul > .item12,
+section > ul > .item11,
+section > ul > .item13{
+  float: left;
+  width: 20%;
+  height: 25%;
+}
+
+section > ul > .item01,
+section > ul > .item02,
+section > ul > .item04,
+section > ul > .item06,
+section > ul > .item09,
+section > ul > .item10,
+section > ul > .item12,
+section > ul > .item14 {
+  overflow: hidden;
+}
+
+/* 백그라운드 사이즈 공통 */
+
+section > ul > .item02 > div,
+section > ul > .item04 > div,
+section > ul > .item06 > div,
+section > ul > .item09 > div,
+section > ul > .item10 > div,
+section > ul > .item12 > div,
+section > ul > .item14 > div {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+/* 렐러티브 공통 */
+
+section > ul > .item03,
+section > ul > .item05,
+section > ul > .item07,
+section > ul > .item08,
+section > ul > .item11,
+section > ul > .item13 {
+  position: relative;
+}
+
+section > ul > .item03::before,
+section > ul > .item05::before,
+section > ul > .item07::before,
+section > ul > .item08::before,
+section > ul > .item11::before,
+section > ul > .item13::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+/* item03, item05, item07, item 08, item 11, item 13 공통 */
+
+section > ul > .item03 > div,
+section > ul > .item05 > div, 
+section > ul > .item07 > div,
+section > ul > .item11 > div,
+section > ul > .item13 > div {
+  position: relative;
+  /* right: 0;
+  bottom: 0; */
+  width: 100%;
+  height: 100%;
+  padding: 4rem 3rem;
+  transition: 0.3s;
+}
+
+section > ul > .item03 > div::before,
+section > ul > .item05 > div::before, 
+section > ul > .item07 > div::before,
+section > ul > .item11 > div::before,
+section > ul > .item13 > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 140px 140px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+/* item text 공통 */
+
+section > ul > .item03 > div > h3,
+section > ul > .item05 > div > h3,
+section > ul > .item07 > div > h3,
+section > ul > .item11 > div > h3,
+section > ul > .item13 > div > h3 {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #444;
+}
+
+section > ul > .item03 > div > p,
+section > ul > .item05 > div > p,
+section > ul > .item07 > div > p,
+section > ul > .item11 > div > p,
+section > ul > .item13 > div > p{
+  position: relative;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* hover 이벤트 공통 */
+
+section > ul > .item03:hover,
+section > ul > .item05:hover,
+section > ul > .item07:hover,
+section > ul > .item08:hover,
+section > ul > .item11:hover,
+section > ul > .item13:hover {
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+/* border 애니메이션 공통 */
+
+section > ul > .item03:hover::before,
+section > ul > .item05:hover::before,
+section > ul > .item07:hover::before,
+section > ul > .item08:hover::before,
+section > ul > .item11:hover::before,
+section > ul > .item13:hover::before {
+  width: 90%;
+  height: 90%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+/* background-image 애니메이션 */
+
+section > ul > .item03:hover > div::before {
+  background-position: right 2% bottom 15%;
+  opacity: 0.2;
+}
+
+section > ul > .item05:hover > div::before {
+  background-position: right bottom 10%;
+  opacity: 0.2;
+}
+
+section > ul > .item07:hover > div::before {
+  background-position: right 10% bottom 10%;
+  opacity: 0.2;
+}
+
+/* section > ul > .item08:hover > div::before {
+  background-position: ;
+} */
+
+section > ul > .item11:hover > div::before {
+  background-position: right 10% bottom -25%;
+  opacity: 0.2;
+}
+
+section > ul > .item13:hover > div::before {
+  background-position: right -5% bottom 10%;
+  opacity: 0.2;
+}
+
+/* color 애니메이션 공통 */
+
+section > ul > .item03:hover > div > h3,
+section > ul > .item05:hover > div > h3,
+section > ul > .item07:hover > div > h3,
+section > ul > .item08:hover > div > h3,
+section > ul > .item11:hover > div > h3,
+section > ul > .item13:hover > div > h3,
+section > ul > .item03:hover > div > p,
+section > ul > .item05:hover > div > p,
+section > ul > .item07:hover > div > p,
+section > ul > .item08:hover > div > p,
+section > ul > .item11:hover > div > p,
+section > ul > .item13:hover > div > p {
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* background-image zomm 애니메이션 공통 */
+
+section > ul > .item01:hover > .item01_txt {
+  background-size: auto 110%;
+}
+
+section > ul > .item02:hover > div,
+section > ul > .item04:hover > div,
+section > ul > .item06:hover > div,
+section > ul > .item09:hover > div,
+section > ul > .item10:hover > div,
+section > ul > .item12:hover > div,
+section > ul > .item14:hover > div{
+  scale: 0.9;
+}

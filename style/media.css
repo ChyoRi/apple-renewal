@@ -1,0 +1,662 @@
+
+/* PC 1600 */
+
+@media (max-width: 1600px) {
+
+  body {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* 1600 헤더 */
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  header > #logo {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  header > h1 > a {
+    display: block;
+  }
+
+  .logo_img1 {
+    display: none;
+  }
+
+  .logo_img2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Main 네비 */
+
+  .main_menu_frame {
+    width: auto !important;
+    margin-top: 0 !important;
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+
+  .main_menu_frame > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .main_menu_frame > ul > li > a {
+    padding: 2.75rem 3rem;
+    white-space: nowrap;
+  }
+
+  .main_menu_frame > ul > li > a:hover {
+    padding: 0 3rem 2rem;
+  }
+
+  .util {
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    height: calc(100% - 80px);
+  }
+
+}
+
+/* PC 1280 */
+
+@media (max-width: 1280px) {
+
+  /* item 01 */
+ 
+  section > ul > .item01 {
+    width: 75%;
+    height: 40%;
+  }
+
+  section > ul > .item01 > .item01_txt {
+    padding-top: 1.6rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h2 {
+    font-size: 4rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h3 {
+    font-size: 2.2rem;
+  }
+
+  section > ul > .item01 > .item01_txt > div > a {
+    font-size: 1.6rem;
+  }
+
+  section > ul > .item07 {
+    float: right;
+  }
+
+  section > ul > .item09 {
+    float: left;
+  }
+
+  section > ul > .item02,
+  section > ul > .item03,
+  section > ul > .item05,
+  section > ul > .item06,
+  section > ul > .item12,
+  section > ul > .item13 {
+    width: 25%;
+    height: 20%;
+  }
+
+  section > ul > .item04,
+  section > ul > .item07,
+  section > ul > .item11,
+  section > ul > .item14 {
+    width: 50%;
+    height: 20%;
+  }
+
+}
+
+/* PC 1025 */
+
+@media (max-width: 1025px) {
+
+  html {
+    font-size: 7.6px;
+  }
+
+  /* 1025 헤더 */
+  
+  .main_menu_frame > ul > li > a {
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+  }
+
+  .main_menu_frame > ul > li > a:hover {
+    padding: 0 2rem 2rem;
+  }
+
+  /* 1025 메인 */
+
+  section > ul > .item01 > .item01_txt {
+    padding-top: 2.5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h2 {
+    font-size: 4.5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h3 {
+    font-size: 2.5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > div > a {
+    font-size: 1.8rem;
+  }
+
+  section > ul > .item01 {
+    width: 100%;
+    height: 40%;
+  }
+  
+  section > ul > .item08 {
+    font-family: 'Inter', sans-serif;
+    float: left;
+    width: 50%;
+    height: 20%;
+    padding: 0;
+    color: #444;
+    text-align: center;
+  }
+
+  section > ul > .item08 > h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  section > ul > .item08 > p {
+    font-size: 2.5rem;
+  }
+
+  section > ul > .item04,
+  section > ul > .item07,
+  section > ul > .item09,
+  section > ul > .item10,
+  section > ul > .item11{
+    width: 25%;
+    height: 20%;
+  }
+
+  section > ul > .item07,
+  section > ul > .item10{
+    float: left;
+  }
+
+
+  section > ul > .item08,
+  section > ul > .item09,
+  section > ul > .item10 {
+    display: block;
+  }
+
+  section > ul > .item06,
+  section > ul > .item14 {
+    display: none;
+  }
+
+  section > ul > .item03 > div::before,
+  section > ul > .item05 > div::before, 
+  section > ul > .item07 > div::before,
+  section > ul > .item08 > div::before,
+  section > ul > .item11 > div::before,
+  section > ul > .item13 > div::before {
+    background-size: 120px 120px;
+  }
+
+}
+
+/* 테블릿 768 */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
+  /* 768 헤더 */
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 0;
+  }
+
+  header > h1 {
+    height: 60px;
+    padding: 10px 0;
+  }
+
+  .main_menu_frame {
+    width: 100% !important;
+  }
+
+  .main_menu_frame > ul > li {
+    width: calc(100% / 4);
+  }
+
+  .main_menu_frame > ul > li > a {
+    display: block;
+    height: 50px;
+    padding: 1.5rem 1.75rem;
+    font-size: 1.55rem;
+    text-align: center;
+  }
+
+  .util {
+    display: none;
+  }
+
+  /* 768 메인 */
+
+  main, section {
+    height: auto;
+  }
+
+  section > ul {
+    height: 1600px;
+  }
+
+  section > ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  section > ul > .item01 {
+    background: url('../images/mobile_item01.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  section > ul > .item01 > .item01_txt {
+    margin-top: 4.5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h2 {
+    font-size: 5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h3 {
+    font-size: 3rem;
+  }
+
+  section > ul > .item01 > .item01_txt > div > a {
+    font-size: 2rem;
+  }
+
+  section > ul > .item01 {
+    height: 30%
+  }
+
+  section > ul > .item06,
+  section > ul > .item14 {
+    display: block;
+  }
+
+  section > ul > .item08,
+  section > ul > .item09,
+  section > ul > .item10 {
+    display: none;
+  }
+
+  section > ul > .item02,
+  section > ul > .item03,
+  section > ul > .item04,
+  section > ul > .item05,
+  section > ul > .item06,
+  section > ul > .item07,
+  section > ul > .item10,
+  section > ul > .item11,
+  section > ul > .item12,
+  section > ul > .item13,
+  section > ul > .item14 {
+    width: 50%;
+    height: 14%;
+  }
+
+  section > ul > .item02,
+  section > ul > .item06,
+  section > ul > .item07,
+  section > ul > .item11,
+  section > ul > .item14 {
+    float: right;
+  }
+
+  section > ul > .item03,
+  section > ul > .item05,
+  section > ul > .item07,
+  section > ul > .item08,
+  section > ul > .item11,
+  section > ul > .item13 {
+    padding: 2rem 0;
+  }
+
+  /* 텍스트 공통 */
+
+  section > ul > .item03 > div, 
+  section > ul > .item05 > div, 
+  section > ul > .item07 > div, 
+  section > ul > .item11 > div, 
+  section > ul > .item13 > div {
+    padding: 2rem 4rem;
+  }
+
+  section > ul > .item03 > div > h3,
+  section > ul > .item05 > div > h3,
+  section > ul > .item07 > div > h3,
+  section > ul > .item11 > div > h3,
+  section > ul > .item13 > div > h3 {
+    font-size: 3rem;
+  }
+
+  section > ul > .item03 > div > p,
+  section > ul > .item05 > div > p,
+  section > ul > .item07 > div > p,
+  section > ul > .item11 > div > p,
+  section > ul > .item13 > div > p {
+    font-size: 2rem;
+  }
+
+  section > ul > .item13:hover > div::before {
+    background-position: right bottom 10%;
+    opacity: 0.2;
+  }
+  
+
+}
+
+/* 모바일 480 */
+
+@media (max-width: 480px) {
+
+   /* 480 헤더 */
+
+  header {
+    height: 165px;
+  }
+
+  .main_menu_frame > ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .main_menu_frame > ul > li {
+    width: 50%;
+  }
+
+  .main_menu_frame > ul > li > a:hover {
+    padding: 1.5rem 1.75rem;
+    font-size: 2rem;
+  }
+
+  .top_nav {
+    display: none;
+  }
+
+  /* 480 메인 */
+
+  main > section > ul {
+    height: 1400px;
+  }
+
+  /* item 01 */
+
+  section > ul > .item01 {
+    height: 20%;
+  }
+
+  section > ul > .item01 > .item01_txt {
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h2 {
+    font-size: 4rem;
+  }
+
+  section > ul > .item01 > .item01_txt > h3 {
+    font-size: 3rem;
+  }
+
+  section > ul > .item01 > .item01_txt > div {
+    margin-top: 1rem;
+  }
+
+  section > ul > .item01 > .item01_txt > div > a {
+    font-size: 2rem;
+  }
+
+  /* item 07 */ 
+
+  section > ul > .item07 > div > p {
+    margin-top: 0;
+  }
+
+  /* item11, item12, item13, item14 배경 넣기 */
+  
+  section > ul > .item11 > div {
+    background: url('../images/item09.png') no-repeat center;
+    background-size: contain;
+  }
+  
+  section > ul > .item12 > div::before {
+    background: url('../images/macbook_b.svg') no-repeat center bottom -25%;
+  }
+
+  section > ul > .item13 > div {
+    background: url('../images/item11.png') no-repeat center;
+    background-size: contain;
+  }
+
+  section > ul > .item14 > div::before {
+    background: url('../images/watch_b.svg') no-repeat center bottom 10%;
+  } 
+  
+  /* item11, item13 공통 */
+
+  section > ul > .item11::before,
+  section > ul > .item13::before {
+    border: 0;
+  }
+
+  section > ul > .item11 > div::before,
+  section > ul > .item13 > div::before {
+    background: none;
+  }
+
+  section > ul > .item11:hover,
+  section > ul > .item13:hover {
+    background-color: transparent;
+  }
+
+  /* item12, item14 공통 */
+
+  section > ul > .item12,
+  section > ul > .item14 {
+    position: relative;
+  }
+
+  section > ul > .item12::before,
+  section > ul > .item14::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    transition: 0.5s;
+  }
+
+  section > ul > .item12 > div,
+  section > ul > .item14 > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none;
+    transition: 0.3s;
+  }
+  
+  section > ul > .item12 > div::before,
+  section > ul > .item14 > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 140px 140px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  /* item 이미지 영역 공통 */
+
+  section > ul > .item02,
+  section > ul > .item04,
+  section > ul > .item06,
+  section > ul > .item11,
+  section > ul > .item13 {
+    width: 100%;
+    height: 10%;
+  }
+
+  /* item 텍스트 영역 공통 */
+
+  section > ul > .item03,
+  section > ul > .item05,
+  section > ul > .item07,
+  section > ul > .item12,
+  section > ul > .item14 {
+    width: 100%;
+    height: 6%;
+    padding: 0;
+  }
+
+  /* item 텍스트 영역 div 패딩 공통 */
+
+  section > ul > .item03 > div,
+  section > ul > .item05 > div,
+  section > ul > .item07 > div,
+  section > ul > .item12 > div,
+  section > ul > .item14 > div {
+    padding: 2rem 3rem;
+  }
+
+  /* item 텍스트 영역 div 폰트 공통 */
+
+  section > ul > .item03 > div > h3,
+  section > ul > .item05 > div > h3,
+  section > ul > .item07 > div > h3,
+  section > ul > .item12 > div > h3,
+  section > ul > .item14 > div > h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: none;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  section > ul > .item03 > div > p,
+  section > ul > .item05 > div > p,
+  section > ul > .item07 > div > p,
+  section > ul > .item12 > div > p,
+  section > ul > .item14 > div > p {
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  /* hover 이벤트 공통 */
+
+  section > ul > .item03:hover > div::before {
+    background-position: right 5% bottom 15%;
+  }
+
+  section > ul > .item05:hover > div::before {
+    background-position: right 5% bottom 20%;
+  }
+
+  section > ul > .item07:hover > div::before {
+    background-position: right 5% bottom 10%;
+  }
+
+  section > ul > .item12:hover > div::before {
+    background-position: right 5% bottom -10px;
+    background-size: 60px 80px;
+    opacity: 0.2;
+  }
+  
+  section > ul > .item14:hover > div::before {
+    background-position: right 5% bottom 10%;
+    opacity: 0.2;
+  }
+
+  section > ul > .item12:hover,
+  section > ul > .item14:hover {
+    background-color: #ccc;
+    transition: 0.3s;
+  }
+
+  section > ul > .item12:hover::before,
+  section > ul > .item14:hover::before {
+    width: 90%;
+    height: 88%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #fff;
+    border-left-color: #fff;
+  }
+  
+  section > ul > .item12:hover > div,
+  section > ul > .item14:hover > div{
+    scale: 1;
+  }
+  
+  section > ul > .item11:hover > div,
+  section > ul > .item13:hover > div{
+    scale: 0.9;
+  }
+
+  section > ul > .item12:hover > div > h3,
+  section > ul > .item14:hover > div > h3,
+  section > ul > .item12:hover > div > p,
+  section > ul > .item14:hover > div > p {
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  section > ul > .item03 > div::before,
+  section > ul > .item05 > div::before, 
+  section > ul > .item07 > div::before,
+  section > ul > .item12 > div::before,
+  section > ul > .item14 > div::before {
+    background-size: 40px 60px;
+  }
+
+}
